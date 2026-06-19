@@ -119,7 +119,7 @@ one all sells (:{F["sec_sell"]:02d}), the other all buys (:{F["sec_buy"]:02d}). 
 <div class="figure"><img src="data:image/png;base64,{fig['buysell-by-second.png']}" alt="buy share by second"></div></section>
 
 <section><h2>Always on</h2>
-<div class="sub">Share of each day's trades on the two seconds, every day of May, in all 24 hours. Never below 47%, median {F["day_two_sec_med"]*100:.0f}%, against a 3.3% uniform expectation; the same signature also runs in April.</div>
+<div class="sub">Share of each day's trades on the two seconds, every day of May, across every hour of the day. Never below 47%, median {F["day_two_sec_med"]*100:.0f}%, against the 3.3% expected on two of sixty seconds; the same signature also runs in April.</div>
 <div class="figure"><img src="data:image/png;base64,{fig['persistence.png']}" alt="daily persistence"></div></section>
 
 <section><h2>The clock on the tape</h2>

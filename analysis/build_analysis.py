@@ -126,7 +126,7 @@ dd = dayshare.copy(); dd.index = pd.to_datetime(dd.index)
 fig, ax = plt.subplots(figsize=(9, 4))
 ax.bar(dd.index, dd.values * 100, color=ACC, width=0.7)
 ax.axhline(dd.median() * 100, ls="--", color="black", lw=1, label="median %.0f%%" % (dd.median() * 100))
-ax.axhline(100 * 2 / 60, ls=":", color="grey", lw=1, label="uniform (3.3%)")
+ax.axhline(100 * 2 / 60, ls=":", color="grey", lw=1, label="uniform, 2 of 60 sec (3.3%)")
 ax.set_ylabel("daily trades on :%02d + :%02d (%%)" % (s_sell, s_buy)); ax.set_xlabel("day (UTC), May 2026")
 ax.set_title("Always on: %.0f to %.0f%% of each day's trades land on the same two seconds"
              % (dd.min() * 100, dd.max() * 100))
