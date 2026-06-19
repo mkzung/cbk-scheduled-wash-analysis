@@ -1,0 +1,7 @@
+# cached raw trade dumps (regenerate with the analysis scripts)
+analysis/cache/
+# python
+__pycache__/
+*.pyc
+.DS_Store
+.pytest_cache/
