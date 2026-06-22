@@ -61,6 +61,7 @@ assert clip < 0.05, "a dominant clip exists -> that would be clip-wash (see #118
 assert csec < 0.1, "control also clusters -> not a clean control"
 assert month_range < 0.5, "price moved too much -> that would be a pump, not wash"
 assert dayshare.min() > 0.3, "the pattern is not persistent across the month"
+assert apr_share > 0.6, "April :05+:35 share too low -> multi-month persistence not confirmed"
 assert 85 <= gap_med <= 95, "cadence is not the expected ~90s"
 assert alt > 0.8, "sides do not alternate"
 assert ms_window < 250, "sub-second timing is not tight"
